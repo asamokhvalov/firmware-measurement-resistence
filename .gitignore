@@ -56,7 +56,7 @@ Drivers/
 
 # Keil output files
 MDK-ARM/DebugConfig
-MDK-ARM/lobusmobus
+MDK-ARM/firmware-measurement-resistence
 MDK-ARM/RTE
 *.scvd
 *.User
