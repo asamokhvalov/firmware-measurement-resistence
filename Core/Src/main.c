@@ -471,8 +471,8 @@ void change_mul_div_up (uint8_t cur_mul, uint8_t div_mul)
 				}
 				case MULTIPLE_X_100: {
 					Write_MUL (MULTIPLE_X_100, GPIO_PIN_RESET);
-					set_r_multiple (&dev_r, MULTIPLE_X_10);
-					Write_MUL (MULTIPLE_X_10, GPIO_PIN_SET);
+					set_r_multiple (&dev_r, MULTIPLE_X_1000);
+					Write_MUL (MULTIPLE_X_1000, GPIO_PIN_SET);
 					break;
 				}
 				case MULTIPLE_X_1000: {
@@ -519,7 +519,7 @@ void change_mul_div_up (uint8_t cur_mul, uint8_t div_mul)
 				}
 				case MULTIPLE_X_100: {
 					Write_MUL (MULTIPLE_X_100, GPIO_PIN_RESET);
-					set_r_multiple (&dev_r, MULTIPLE_X_10);
+					set_r_multiple (&dev_r, MULTIPLE_X_1000);
 					Write_MUL (MULTIPLE_X_10, GPIO_PIN_SET);
 					break;
 				}
@@ -567,8 +567,8 @@ void change_mul_div_up (uint8_t cur_mul, uint8_t div_mul)
 				}
 				case MULTIPLE_X_100: {
 					Write_MUL (MULTIPLE_X_100, GPIO_PIN_RESET);
-					set_r_multiple (&dev_r, MULTIPLE_X_10);
-					Write_MUL (MULTIPLE_X_10, GPIO_PIN_SET);
+					set_r_multiple (&dev_r, MULTIPLE_X_1000);
+					Write_MUL (MULTIPLE_X_1000, GPIO_PIN_SET);
 					break;
 				}
 				case MULTIPLE_X_1000: {
@@ -577,9 +577,9 @@ void change_mul_div_up (uint8_t cur_mul, uint8_t div_mul)
 					set_r_multiple (&dev_r, MULTIPLE_X_1);
 					Write_MUL (MULTIPLE_X_1, GPIO_PIN_SET);
 					
-					Write_DIV (DIVIDER_1_M, GPIO_PIN_RESET);
-					set_r_divide (&dev_r, DIVIDER_10_M);
-					Write_DIV (DIVIDER_10_M, GPIO_PIN_SET);
+					Write_DIV (DIVIDER_10_M, GPIO_PIN_RESET);
+					set_r_divide (&dev_r, DIVIDER_47_M);
+					Write_DIV (DIVIDER_47_M, GPIO_PIN_SET);
 					
 					break;
 				}
@@ -615,8 +615,8 @@ void change_mul_div_up (uint8_t cur_mul, uint8_t div_mul)
 				}
 				case MULTIPLE_X_100: {
 					Write_MUL (MULTIPLE_X_100, GPIO_PIN_RESET);
-					set_r_multiple (&dev_r, MULTIPLE_X_10);
-					Write_MUL (MULTIPLE_X_10, GPIO_PIN_SET);
+					set_r_multiple (&dev_r, MULTIPLE_X_1000);
+					Write_MUL (MULTIPLE_X_1000, GPIO_PIN_SET);
 					break;
 				}
 				case MULTIPLE_X_1000: {
