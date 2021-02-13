@@ -5,9 +5,15 @@
 
 #define MAX_SYS_TICK_MS (uint16_t)65000
 
+/*
+		supposed conditions
+			200 * 0.000805 = 0.161 V
+			3900 * 0.000805 = 3.1395 V. In this case was bug when device do not switch X resistor from x100 to x1000 for 10M divide resistor
+			3800 * 0.000805 = 3.059 V
+*/
 typedef enum {
-	START_VALUE_SIGNAL_MIN = 200,	// 200 * 0.000805 = 0.1611 V
-	START_VALUE_SIGNAL_MAX = 3900	// 3725 * 0.000805 = 3.001098 V
+	START_VALUE_SIGNAL_MIN = 200,	
+	START_VALUE_SIGNAL_MAX = 3800	
 }
 CAPTURE_VALUE_BORDERS;
 
